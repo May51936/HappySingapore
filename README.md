@@ -1,2 +1,2 @@
 # HappySingapore
-An android app that helps Singaporean live better.
+An android app that helps Singaporeans live better.
