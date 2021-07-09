@@ -1,0 +1,3 @@
+Main page: 
+functions: SafeEntry(scan QR code), weather report, MRT information, bus information, 
+news, change language (Chinese <-> English), travel information(laws, tickets), local attraction information
