@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: org.litepal.guolindev:core:3.2.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3b6db135178317752637da8e79e26431/core-3.2.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3b6db135178317752637da8e79e26431/core-3.2.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3b6db135178317752637da8e79e26431/core-3.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2fd500c04eeb8c0538a0fb3171323dd/core-3.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2fd500c04eeb8c0538a0fb3171323dd/core-3.2.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b2fd500c04eeb8c0538a0fb3171323dd/core-3.2.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.litepal.guolindev/core/3.2.3/e9250e8e8fc4051d4f7229abf85dfa2a7850d3e2/core-3.2.3-javadoc.jar!/" />

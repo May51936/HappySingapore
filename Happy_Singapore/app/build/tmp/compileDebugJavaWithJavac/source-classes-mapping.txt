@@ -1,0 +1,18 @@
+Utils/URLUtils.java
+ Utils.URLUtils
+com/WangTianyu/HappySingapore/BuildConfig.java
+ com.WangTianyu.HappySingapore.BuildConfig
+module/url/BaseRsp.java
+ module.url.BaseRsp
+Utils/JSONUtil.java
+ Utils.JSONUtil
+common/test/TestActivity.java
+ common.test.TestActivity
+module/activity/BaseActivity.java
+ module.activity.BaseActivity
+Utils/HTTPUtils.java
+ Utils.HTTPUtils
+common/network/NewsRsp.java
+ common.network.NewsRsp
+module/url/RequestModule.java
+ module.url.RequestModule
