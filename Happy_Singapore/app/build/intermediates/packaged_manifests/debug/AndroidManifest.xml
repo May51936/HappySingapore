@@ -14,11 +14,13 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_pinterest"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_pinterest_rounded"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HappySingapore" >
+        android:testOnly="true"
+        android:usesCleartextTraffic="true" >
+        android:theme="@style/Theme.HappySingapore">
         <activity
             android:name="common.test.TestActivity"
             android:label="testing" >

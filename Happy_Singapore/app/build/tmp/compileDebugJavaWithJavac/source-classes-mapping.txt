@@ -6,13 +6,20 @@ module/url/BaseRsp.java
  module.url.BaseRsp
 Utils/JSONUtil.java
  Utils.JSONUtil
-common/test/TestActivity.java
- common.test.TestActivity
-module/activity/BaseActivity.java
- module.activity.BaseActivity
+module/url/NewsRsp.java
+ module.url.NewsRsp
+module/url/RetrofitModule.java
+ module.url.RetrofitModule
+Utils/APIkeys.java
+ Utils.APIkeys
 Utils/HTTPUtils.java
  Utils.HTTPUtils
-common/network/NewsRsp.java
- common.network.NewsRsp
+module/activity/BaseActivity.java
+ module.activity.BaseActivity
 module/url/RequestModule.java
  module.url.RequestModule
+common/test/TestActivity.java
+ common.test.TestActivity
+ common.test.TestActivity$1
+common/network/NewsReq.java
+ common.network.NewsReq
