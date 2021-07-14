@@ -35,9 +35,13 @@ public class TestActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        NewsReq news = new NewsReq();
+        NewsReq news = new NewsReq(TestActivity.this);
         news.init();
         news.sendReq();
-        news.getOneNews(0);
+        try {
+            news.read("news.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -18,8 +18,8 @@ Utils/HTTPUtils.java
  Utils.HTTPUtils
 module/url/RequestModule.java
  module.url.RequestModule
+common/test/TestActivity.java
+ common.test.TestActivity
 common/network/NewsReq.java
  common.network.NewsReq
  common.network.NewsReq$1
-common/test/TestActivity.java
- common.test.TestActivity
