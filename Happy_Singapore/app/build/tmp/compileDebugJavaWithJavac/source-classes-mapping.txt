@@ -12,14 +12,14 @@ module/url/RetrofitModule.java
  module.url.RetrofitModule
 Utils/APIkeys.java
  Utils.APIkeys
-Utils/HTTPUtils.java
- Utils.HTTPUtils
 module/activity/BaseActivity.java
  module.activity.BaseActivity
+Utils/HTTPUtils.java
+ Utils.HTTPUtils
 module/url/RequestModule.java
  module.url.RequestModule
-common/test/TestActivity.java
- common.test.TestActivity
- common.test.TestActivity$1
 common/network/NewsReq.java
  common.network.NewsReq
+ common.network.NewsReq$1
+common/test/TestActivity.java
+ common.test.TestActivity

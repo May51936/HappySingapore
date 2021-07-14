@@ -4,6 +4,9 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 
 public class JSONUtil {
@@ -15,12 +18,14 @@ public class JSONUtil {
      */
     private static String TAG = "json_processing";
 
-    public static Object fromJson(String json, Class<?> clazz) {
-        Object obj = null;
-        Gson gson = new GsonBuilder().disableHtmlEscaping().create();
-        Log.i(TAG,"fromJson");
-        obj = gson.fromJson(json, clazz);
-        return obj;
+    public static JsonObject fromJson(String json) {
+        JsonObject data = new JsonParser().parse(json).getAsJsonObject();
+        return data;
+    }
+
+    public static JsonArray getArray(JsonObject json, String name){
+        JsonArray array = json.getAsJsonArray(name);
+        return array;
     }
 
 
