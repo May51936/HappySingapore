@@ -39,7 +39,7 @@ public class NewsReq extends RequestModule{
     private Call<ResponseBody> call;
     private int max;
     private Activity mActivity;
-    private ArrayList<NewsRsp> news = null;
+    private ArrayList<NewsRsp> array = new ArrayList<NewsRsp>();
 
     private static final String TAG = NewsReq.class.toString();
 
@@ -77,18 +77,18 @@ public class NewsReq extends RequestModule{
 
     public void processJSONData(String json) throws IOException {
         JsonArray data;
+        NewsRsp rsp;
         JsonObject returnData = new JsonParser().parse(json).getAsJsonObject();
         max = returnData.get("totalResults").getAsInt();
         data = returnData.getAsJsonArray("articles");
         Log.i(TAG, data.toString());
-        Log.i(TAG, ""+returnData.size());
-        Log.i(TAG, ""+returnData.getAsString().length());
-        for(int i = 0; i < returnData.size(); i++){
-            Log.i(TAG, ""+getOneNews(i, data).get_date());
+        for(int i = 0; i < data.size(); i++){
+            rsp = setOneNews(i, data);
+            array.add(rsp);
         }
     }
 
-    public NewsRsp getOneNews(int num, JsonArray data) throws IOException {
+    public NewsRsp setOneNews(int num, JsonArray data) throws IOException {
         NewsRsp news = new NewsRsp();
         JsonObject obj = data.get(num).getAsJsonObject();
         news.set_date(obj.get("publishedAt").getAsString());
@@ -99,49 +99,12 @@ public class NewsReq extends RequestModule{
         return news;
     }
 
-    public void save (String text, String name) throws IOException{
-        BufferedWriter writer = null;
-        FileOutputStream output = null;
-        try {
-            File file = new File(mActivity.getCacheDir() + File.separator + name);
-            output = new FileOutputStream(file);
-            writer = new BufferedWriter(new OutputStreamWriter(output));
-            writer.write(text);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally {
-            if(writer != null){
-                writer.close();
-            }
-            if(output != null){
-                output.close();
-            }
-        }
-        Log.i(TAG, "Successfully saved in " + name);
+    public NewsRsp getOneNews(int num){
+        return array.get(num);
     }
 
-    public String read (String name) throws IOException {
-        FileInputStream input = null;
-        String result = null;
-        try {
-            File file = new File(mActivity.getCacheDir() + File.separator + name);
-            input = new FileInputStream(file);
-            int size = input.available();
-            byte[] result_bytes = new byte[size];
-            input.read(result_bytes);
-            result = new String(result_bytes);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally {
-            if(input != null){
-                input.close();
-            }
-        }
-        return result;
+    public void test(){
+
     }
 
 }

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Wang Tianyu\\Desktop\\Programming\\Android\\HappySingapore\\Happy_Singapore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\news_layout.xml",
+        "source": "C:\\Users\\Wang Tianyu\\Desktop\\Programming\\Android\\HappySingapore\\Happy_Singapore\\app\\src\\main\\res\\layout\\news_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Wang Tianyu\\Desktop\\Programming\\Android\\HappySingapore\\Happy_Singapore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\news_item.xml",
+        "source": "C:\\Users\\Wang Tianyu\\Desktop\\Programming\\Android\\HappySingapore\\Happy_Singapore\\app\\src\\main\\res\\layout\\news_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Wang Tianyu\\Desktop\\Programming\\Android\\HappySingapore\\Happy_Singapore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\test.xml",
+        "source": "C:\\Users\\Wang Tianyu\\Desktop\\Programming\\Android\\HappySingapore\\Happy_Singapore\\app\\src\\main\\res\\layout\\test.xml"
+    }
+]
