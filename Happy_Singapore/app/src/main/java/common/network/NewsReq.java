@@ -2,9 +2,16 @@ package common.network;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.os.Parcelable;
 import android.speech.RecognitionService;
+import android.util.JsonReader;
 import android.util.Log;
+import android.widget.ImageView;
 
+import com.WangTianyu.HappySingapore.R;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -18,15 +25,25 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.Serializable;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.net.ResponseCache;
 import java.nio.CharBuffer;
 import java.util.ArrayList;
+import java.util.List;
 
 import Utils.HTTPUtils;
 import Utils.URLUtils;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
+import module.data.FileProcessing;
+import module.data.Picture;
 import module.url.NewsRsp;
+import module.url.NewsRspAll;
 import module.url.RequestModule;
 import module.url.RetrofitModule;
 import okhttp3.ResponseBody;
@@ -36,10 +53,13 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class NewsReq extends RequestModule{
-    private Call<ResponseBody> call;
+    private Observable<NewsRspAll> observable;
     private int max;
     private Activity mActivity;
     private ArrayList<NewsRsp> array = new ArrayList<NewsRsp>();
+    private Handler handler = new Handler();
+    private Bundle bundle;
+
 
     private static final String TAG = NewsReq.class.toString();
 
@@ -48,54 +68,73 @@ public class NewsReq extends RequestModule{
     }
 
     public void sendReq(){
-        call.enqueue(new Callback<ResponseBody>() {
-            @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                //处理网络请求返回的数据
-                Log.i(TAG, "Successful req: " + response.body().toString());
-                try {
-                    processJSONData(response.body().string());
-                    Log.e(TAG, "Successful data");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+        observable.subscribeOn(Schedulers.io())
+                .unsubscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<NewsRspAll>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        Log.d(TAG, "Connection Start...");
+                    }
 
-            @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
-                Log.e(TAG, "Fail req: " + t.toString());
-            }
-        });
+                    @Override
+                    public void onNext(NewsRspAll result) {
+                        //对返回的数据进行处理
+                        try {
+                            processJSONData(result);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Log.e(TAG, "Successful data");
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.d(TAG, "Failed connection");
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.d(TAG, "Successful connection");
+                        assign(array);
+                    }
+                });
+        Log.i(TAG, String.valueOf(array.size()));
     }
 
     public void init(){
         Retrofit retrofit = new RetrofitModule().setURL(URLUtils.news);
         HTTPUtils service = retrofit.create(HTTPUtils.class);
-        call = service.getNews();
+        observable = service.getNews();
     }
 
 
-    public void processJSONData(String json) throws IOException {
-        JsonArray data;
+    public void processJSONData(NewsRspAll json) throws IOException {
+        List data;
         NewsRsp rsp;
-        JsonObject returnData = new JsonParser().parse(json).getAsJsonObject();
-        max = returnData.get("totalResults").getAsInt();
-        data = returnData.getAsJsonArray("articles");
+        FileProcessing file = null;
+        max = json.getTotalResults();
+        data = json.getNews();
         Log.i(TAG, data.toString());
         for(int i = 0; i < data.size(); i++){
             rsp = setOneNews(i, data);
             array.add(rsp);
         }
+//        set_pic();
     }
 
-    public NewsRsp setOneNews(int num, JsonArray data) throws IOException {
+    public NewsRsp setOneNews(int num, List data) throws IOException {
         NewsRsp news = new NewsRsp();
-        JsonObject obj = data.get(num).getAsJsonObject();
-        news.set_date(obj.get("publishedAt").getAsString());
-        news.set_title(obj.get("title").getAsString());
-        news.set_name(obj.get("source").getAsJsonObject().get("name").getAsString());
-        news.set_url(obj.get("url").getAsString());
-        news.set_pic(obj.get("urlToImage").getAsString());
+        JsonObject obj = new JsonParser().parse(data.get(num).toString()).getAsJsonObject();
+        try{
+            news.set_date(obj.get("publishedAt").getAsString());
+            news.set_title(obj.get("title").getAsString());
+            news.set_name(obj.get("source").getAsJsonObject().get("name").getAsString());
+            news.set_url(obj.get("url").getAsString());
+            news.set_pic(obj.get("urlToImage").getAsString());
+        } catch (RuntimeException e){
+            e.printStackTrace();
+        }
         return news;
     }
 
@@ -103,8 +142,30 @@ public class NewsReq extends RequestModule{
         return array.get(num);
     }
 
+    public ArrayList<NewsRsp> getArray(){
+        return array;
+    }
     public void test(){
+        Log.i("??????", String.valueOf(array.size()));
+    }
 
+    public void set_pic(){
+        Picture pic = new Picture();
+        try {
+            pic.getFromURL(getOneNews(0).get_pic());
+//            ImageView view = (ImageView) mActivity.findViewById(R.id.test);
+//            view.setImageBitmap(pic.getPic());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void assign(ArrayList<NewsRsp> array){
+        Message message = new Message();
+        bundle = new Bundle();
+        bundle.putSerializable("array", (Serializable) array);
+        message.setData(bundle);
+        handler.sendMessage(message);
     }
 
 }

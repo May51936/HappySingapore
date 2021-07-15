@@ -1,6 +1,9 @@
 package Utils;
 
+
+import io.reactivex.Observable;
 import module.url.NewsRsp;
+import module.url.NewsRspAll;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -15,6 +18,6 @@ public interface HTTPUtils {
      * @return
      */
     @GET(URLUtils.news_addition + APIkeys.news_API_key)
-    Call<ResponseBody> getNews();
+    Observable<NewsRspAll> getNews();
 
 }

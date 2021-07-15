@@ -2,6 +2,9 @@ package common.test;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +18,9 @@ import com.google.gson.JsonParser;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import Utils.HTTPUtils;
 import Utils.URLUtils;
@@ -30,22 +35,22 @@ import retrofit2.Callback;
 import retrofit2.Converter;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.http.GET;
 
 public class TestActivity extends BaseActivity {
 
     private static final String TAG = TestActivity.class.toString();
+    private Handler handler;
+    private Bundle bundle = new Bundle();
+//    private ArrayList<NewsRsp> array;
 
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
         NewsReq news = new NewsReq(TestActivity.this);
-        Picture pic = new Picture();
         news.init();
         news.sendReq();
-//        news.test();
 //        try {
 //            news.getOneNews(0).get_pic();
 //            pic.getFromURL(news.getOneNews(0).get_pic());

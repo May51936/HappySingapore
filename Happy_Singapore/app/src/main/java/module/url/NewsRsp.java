@@ -4,7 +4,7 @@ import module.url.BaseRsp;
 
 public class NewsRsp extends BaseRsp {
     /**
-     * 新闻请求返回内容
+     * 新闻请求返回内容（单个新闻）
      */
 
     private String title;

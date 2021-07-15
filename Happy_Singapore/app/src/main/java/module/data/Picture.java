@@ -26,10 +26,14 @@ public class Picture {
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setConnectTimeout(5000);
         conn.setRequestMethod("GET");
+        conn.getResponseCode();
         if (conn.getResponseCode() == 200) {
             InputStream inputStream = conn.getInputStream();
             bitmap = BitmapFactory.decodeStream(inputStream);
             Log.i(TAG, "Successfully get picture");
+        }
+        else{
+            Log.e(TAG, "Get pic failed");
         }
     }
 }

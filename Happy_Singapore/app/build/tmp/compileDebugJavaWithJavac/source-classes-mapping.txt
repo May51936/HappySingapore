@@ -4,10 +4,10 @@ Utils/JSONUtil.java
  Utils.JSONUtil
 module/url/NewsRsp.java
  module.url.NewsRsp
-Utils/HTTPUtils.java
- Utils.HTTPUtils
 module/data/Picture.java
  module.data.Picture
+Utils/HTTPUtils.java
+ Utils.HTTPUtils
 com/WangTianyu/HappySingapore/databinding/NewsItemBinding.java
  com.WangTianyu.HappySingapore.databinding.NewsItemBinding
 module/url/RetrofitModule.java
@@ -24,12 +24,14 @@ com/WangTianyu/HappySingapore/databinding/TestBinding.java
  com.WangTianyu.HappySingapore.databinding.TestBinding
 module/url/RequestModule.java
  module.url.RequestModule
+module/url/NewsRspAll.java
+ module.url.NewsRspAll
 Utils/APIkeys.java
  Utils.APIkeys
 module/activity/BaseActivity.java
  module.activity.BaseActivity
+common/test/TestActivity.java
+ common.test.TestActivity
 common/network/NewsReq.java
  common.network.NewsReq
  common.network.NewsReq$1
-common/test/TestActivity.java
- common.test.TestActivity

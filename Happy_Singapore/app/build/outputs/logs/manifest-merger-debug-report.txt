@@ -15,6 +15,7 @@ MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Wang Tianyu\.gradl
 MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\8b9f7d061e11128cb4e8eda2eae23088\recyclerview-selection-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\5511f57e160c7e247f5d805a7544c561\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\dc3efdeb21bfe033ce749010f42b490d\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\369e585a71243a75d46b83812b1f44ac\rxandroid-2.1.1\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\022e86935ec8da08f293a834c7a9a4dc\appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\204d56b624e751e7990ccfa8a11e8889\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -158,6 +159,8 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Wang Tianyu\.gradle\
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\5511f57e160c7e247f5d805a7544c561\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\dc3efdeb21bfe033ce749010f42b490d\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\dc3efdeb21bfe033ce749010f42b490d\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\369e585a71243a75d46b83812b1f44ac\rxandroid-2.1.1\AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\369e585a71243a75d46b83812b1f44ac\rxandroid-2.1.1\AndroidManifest.xml:18:5-43
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\022e86935ec8da08f293a834c7a9a4dc\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
