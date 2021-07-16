@@ -1012,6 +1012,7 @@ int color error_color_material_dark 0x7f050059
 int color error_color_material_light 0x7f05005a
 int color foreground_material_dark 0x7f05005b
 int color foreground_material_light 0x7f05005c
+int color gray 0x7f0500cf
 int color highlighted_text_material_dark 0x7f05005d
 int color highlighted_text_material_light 0x7f05005e
 int color material_blue_grey_800 0x7f05005f
@@ -1842,6 +1843,11 @@ int id nav_controller_view_tag 0x7f0800e2
 int id nav_host_fragment_container 0x7f0800e3
 int id navigation_header_container 0x7f0800e4
 int id never 0x7f0800e5
+int id news_item_date 0x7f080176
+int id news_item_img 0x7f080177
+int id news_item_name 0x7f080178
+int id news_item_title 0x7f080179
+int id news_view 0x7f08017a
 int id noScroll 0x7f0800e6
 int id none 0x7f0800e7
 int id normal 0x7f0800e8

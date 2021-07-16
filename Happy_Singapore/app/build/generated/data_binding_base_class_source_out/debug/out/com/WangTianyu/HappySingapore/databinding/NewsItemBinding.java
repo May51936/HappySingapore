@@ -4,20 +4,41 @@ package com.WangTianyu.HappySingapore.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import com.WangTianyu.HappySingapore.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class NewsItemBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
 
-  private NewsItemBinding(@NonNull LinearLayout rootView) {
+  @NonNull
+  public final TextView newsItemDate;
+
+  @NonNull
+  public final ImageView newsItemImg;
+
+  @NonNull
+  public final TextView newsItemName;
+
+  @NonNull
+  public final TextView newsItemTitle;
+
+  private NewsItemBinding(@NonNull LinearLayout rootView, @NonNull TextView newsItemDate,
+      @NonNull ImageView newsItemImg, @NonNull TextView newsItemName,
+      @NonNull TextView newsItemTitle) {
     this.rootView = rootView;
+    this.newsItemDate = newsItemDate;
+    this.newsItemImg = newsItemImg;
+    this.newsItemName = newsItemName;
+    this.newsItemTitle = newsItemTitle;
   }
 
   @Override
@@ -43,10 +64,38 @@ public final class NewsItemBinding implements ViewBinding {
 
   @NonNull
   public static NewsItemBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.news_item_date;
+      TextView newsItemDate = rootView.findViewById(id);
+      if (newsItemDate == null) {
+        break missingId;
+      }
 
-    return new NewsItemBinding((LinearLayout) rootView);
+      id = R.id.news_item_img;
+      ImageView newsItemImg = rootView.findViewById(id);
+      if (newsItemImg == null) {
+        break missingId;
+      }
+
+      id = R.id.news_item_name;
+      TextView newsItemName = rootView.findViewById(id);
+      if (newsItemName == null) {
+        break missingId;
+      }
+
+      id = R.id.news_item_title;
+      TextView newsItemTitle = rootView.findViewById(id);
+      if (newsItemTitle == null) {
+        break missingId;
+      }
+
+      return new NewsItemBinding((LinearLayout) rootView, newsItemDate, newsItemImg, newsItemName,
+          newsItemTitle);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

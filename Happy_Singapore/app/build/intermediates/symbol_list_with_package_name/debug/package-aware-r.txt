@@ -1013,6 +1013,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -1843,6 +1844,11 @@ id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_header_container
 id never
+id news_item_date
+id news_item_img
+id news_item_name
+id news_item_title
+id news_view
 id noScroll
 id none
 id normal

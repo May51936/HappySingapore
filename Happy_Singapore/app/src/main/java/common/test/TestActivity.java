@@ -47,7 +47,7 @@ public class TestActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test);
+        setContentView(R.layout.news_layout);
         NewsReq news = new NewsReq(TestActivity.this);
         news.init();
         news.sendReq();

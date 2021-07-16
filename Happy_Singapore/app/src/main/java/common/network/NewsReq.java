@@ -2,6 +2,8 @@ package common.network;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -9,7 +11,12 @@ import android.os.Parcelable;
 import android.speech.RecognitionService;
 import android.util.JsonReader;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.WangTianyu.HappySingapore.R;
 import com.google.gson.JsonArray;
@@ -40,6 +47,7 @@ import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import module.adapter.RecyclerAdapter;
 import module.data.FileProcessing;
 import module.data.Picture;
 import module.url.NewsRsp;
@@ -59,6 +67,8 @@ public class NewsReq extends RequestModule{
     private ArrayList<NewsRsp> array = new ArrayList<NewsRsp>();
     private Handler handler = new Handler();
     private Bundle bundle;
+    private RecyclerView recyclerView;
+    private RecyclerAdapter adapter;
 
 
     private static final String TAG = NewsReq.class.toString();
@@ -98,12 +108,7 @@ public class NewsReq extends RequestModule{
                     public void onComplete() {
                         Log.d(TAG, "Successful connection");
                         //呈现新闻给用户
-                        Picture picture = new Picture(mActivity);
-                        try {
-                            picture.getFromURL(getOneNews(0).get_pic());
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+                        init_view();
                     }
                 });
         Log.i(TAG, String.valueOf(array.size()));
@@ -127,7 +132,8 @@ public class NewsReq extends RequestModule{
         Log.i(TAG, data.toString());
         for(int i = 0; i < data.size(); i++){
             rsp = setOneNews(i, data);
-            array.add(rsp);
+            if (rsp.get_pic()!=null)
+                array.add(rsp);
         }
 //        set_pic();
     }
@@ -156,6 +162,14 @@ public class NewsReq extends RequestModule{
         return array;
     }
 
+    public void init_view(){
+        recyclerView = (RecyclerView) mActivity.findViewById(R.id.news_view);
+        adapter = new RecyclerAdapter(mActivity, array);
+        LinearLayoutManager manager = new LinearLayoutManager(mActivity);
+        manager.setOrientation(RecyclerView.VERTICAL);
+        recyclerView.setLayoutManager(manager);
+        recyclerView.setAdapter(adapter);
+    }
 
 //    public void assign(ArrayList<NewsRsp> array){
 //        Message message = new Message();

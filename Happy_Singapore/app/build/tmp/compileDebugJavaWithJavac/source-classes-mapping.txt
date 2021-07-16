@@ -8,31 +8,35 @@ module/activity/BaseActivity.java
  module.activity.BaseActivity
 Utils/HTTPUtils.java
  Utils.HTTPUtils
-com/WangTianyu/HappySingapore/databinding/NewsItemBinding.java
- com.WangTianyu.HappySingapore.databinding.NewsItemBinding
+module/url/RequestModule.java
+ module.url.RequestModule
 module/url/RetrofitModule.java
  module.url.RetrofitModule
 com/WangTianyu/HappySingapore/BuildConfig.java
  com.WangTianyu.HappySingapore.BuildConfig
-com/WangTianyu/HappySingapore/databinding/NewsLayoutBinding.java
- com.WangTianyu.HappySingapore.databinding.NewsLayoutBinding
+module/url/NewsRspAll.java
+ module.url.NewsRspAll
 module/url/BaseRsp.java
  module.url.BaseRsp
 module/data/FileProcessing.java
  module.data.FileProcessing
-com/WangTianyu/HappySingapore/databinding/TestBinding.java
- com.WangTianyu.HappySingapore.databinding.TestBinding
-module/url/RequestModule.java
- module.url.RequestModule
-module/url/NewsRspAll.java
- module.url.NewsRspAll
 Utils/APIkeys.java
  Utils.APIkeys
+com/WangTianyu/HappySingapore/databinding/NewsLayoutBinding.java
+ com.WangTianyu.HappySingapore.databinding.NewsLayoutBinding
+com/WangTianyu/HappySingapore/databinding/TestBinding.java
+ com.WangTianyu.HappySingapore.databinding.TestBinding
+com/WangTianyu/HappySingapore/databinding/NewsItemBinding.java
+ com.WangTianyu.HappySingapore.databinding.NewsItemBinding
 common/test/TestActivity.java
  common.test.TestActivity
 module/data/Picture.java
  module.data.Picture
  module.data.Picture$1
+module/adapter/RecyclerAdapter.java
+ module.adapter.RecyclerAdapter
+ module.adapter.RecyclerAdapter$1
+ module.adapter.RecyclerAdapter$MyViewHolder
 common/network/NewsReq.java
  common.network.NewsReq
  common.network.NewsReq$1

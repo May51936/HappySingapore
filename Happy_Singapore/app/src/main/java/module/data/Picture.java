@@ -22,6 +22,7 @@ import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import module.adapter.RecyclerAdapter;
 import module.url.NewsRspAll;
 import module.url.RetrofitModule;
 import okhttp3.ResponseBody;
@@ -33,11 +34,13 @@ public class Picture {
     private Bitmap bitmap;
     private Observable<ResponseBody> observable;
     private Activity mActivity;
+    private RecyclerAdapter.MyViewHolder holder;
 
     private static final String TAG = Picture.class.toString();
 
-    public Picture(Activity activity){
+    public Picture(Activity activity, RecyclerAdapter.MyViewHolder holder){
         this.mActivity = activity;
+        this.holder = holder;
     }
 
     public Bitmap getPic(){
@@ -45,12 +48,12 @@ public class Picture {
     }
 
     public void setPic(){
-        ImageView view = (ImageView) mActivity.findViewById(R.id.test);
-        view.setImageBitmap(bitmap);
+        holder.img.setImageBitmap(bitmap);
     }
 
     public void getFromURL(String path) throws IOException {
         //分割URL以便满足retrofit要求
+        Log.i(TAG, path);
         int split = path.lastIndexOf("/");
         String base_url = path.substring(0,split+1);
         String addi_url = path.substring(split+1);
@@ -69,6 +72,7 @@ public class Picture {
                     public void onNext(ResponseBody result) {
                         //对返回的数据进行处理
                         bitmap = BitmapFactory.decodeStream(result.byteStream());
+                        setPic();
                         Log.e(TAG, "Successful data");
                     }
 
@@ -80,7 +84,6 @@ public class Picture {
                     @Override
                     public void onComplete() {
                         Log.d(TAG, "Successful connection");
-                        setPic();
                     }
                 });
         }
