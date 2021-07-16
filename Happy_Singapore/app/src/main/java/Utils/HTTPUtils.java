@@ -7,6 +7,9 @@ import module.url.NewsRspAll;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.PATCH;
+import retrofit2.http.Path;
+import retrofit2.http.Url;
 
 public interface HTTPUtils {
     /**
@@ -19,5 +22,11 @@ public interface HTTPUtils {
      */
     @GET(URLUtils.news_addition + APIkeys.news_API_key)
     Observable<NewsRspAll> getNews();
+
+    /**
+     * 获取图片
+     */
+    @GET
+    Observable<ResponseBody> getPic(@Url String url);
 
 }

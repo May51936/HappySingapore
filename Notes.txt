@@ -1,0 +1,7 @@
+1. 动态申请安装App权限时应放在Activity中（不要封装进类）
+
+2. 子线程不要对全局变量进行赋值，可用intent handler等传出
+
+3. 使用retrofit时，call/observable应定义为全局变量
+
+4. retrofit动态拼接URL时，？会出现转义问题，应用@GET后用@Url拼接，取代@GET("{}")

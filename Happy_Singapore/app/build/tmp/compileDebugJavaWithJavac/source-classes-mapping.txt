@@ -4,8 +4,8 @@ Utils/JSONUtil.java
  Utils.JSONUtil
 module/url/NewsRsp.java
  module.url.NewsRsp
-module/data/Picture.java
- module.data.Picture
+module/activity/BaseActivity.java
+ module.activity.BaseActivity
 Utils/HTTPUtils.java
  Utils.HTTPUtils
 com/WangTianyu/HappySingapore/databinding/NewsItemBinding.java
@@ -28,10 +28,11 @@ module/url/NewsRspAll.java
  module.url.NewsRspAll
 Utils/APIkeys.java
  Utils.APIkeys
-module/activity/BaseActivity.java
- module.activity.BaseActivity
 common/test/TestActivity.java
  common.test.TestActivity
+module/data/Picture.java
+ module.data.Picture
+ module.data.Picture$1
 common/network/NewsReq.java
  common.network.NewsReq
  common.network.NewsReq$1

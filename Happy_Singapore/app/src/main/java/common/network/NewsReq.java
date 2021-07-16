@@ -68,6 +68,7 @@ public class NewsReq extends RequestModule{
     }
 
     public void sendReq(){
+        //发送网络请求
         observable.subscribeOn(Schedulers.io())
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -96,13 +97,20 @@ public class NewsReq extends RequestModule{
                     @Override
                     public void onComplete() {
                         Log.d(TAG, "Successful connection");
-                        assign(array);
+                        //呈现新闻给用户
+                        Picture picture = new Picture(mActivity);
+                        try {
+                            picture.getFromURL(getOneNews(0).get_pic());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
         Log.i(TAG, String.valueOf(array.size()));
     }
 
     public void init(){
+        //retrofit初始化
         Retrofit retrofit = new RetrofitModule().setURL(URLUtils.news);
         HTTPUtils service = retrofit.create(HTTPUtils.class);
         observable = service.getNews();
@@ -110,6 +118,7 @@ public class NewsReq extends RequestModule{
 
 
     public void processJSONData(NewsRspAll json) throws IOException {
+        //处理请求返回的新闻信息
         List data;
         NewsRsp rsp;
         FileProcessing file = null;
@@ -124,6 +133,7 @@ public class NewsReq extends RequestModule{
     }
 
     public NewsRsp setOneNews(int num, List data) throws IOException {
+        //将单个新闻JSON转为NewsRsp类
         NewsRsp news = new NewsRsp();
         JsonObject obj = new JsonParser().parse(data.get(num).toString()).getAsJsonObject();
         try{
@@ -145,27 +155,14 @@ public class NewsReq extends RequestModule{
     public ArrayList<NewsRsp> getArray(){
         return array;
     }
-    public void test(){
-        Log.i("??????", String.valueOf(array.size()));
-    }
 
-    public void set_pic(){
-        Picture pic = new Picture();
-        try {
-            pic.getFromURL(getOneNews(0).get_pic());
-//            ImageView view = (ImageView) mActivity.findViewById(R.id.test);
-//            view.setImageBitmap(pic.getPic());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
-    public void assign(ArrayList<NewsRsp> array){
-        Message message = new Message();
-        bundle = new Bundle();
-        bundle.putSerializable("array", (Serializable) array);
-        message.setData(bundle);
-        handler.sendMessage(message);
-    }
+//    public void assign(ArrayList<NewsRsp> array){
+//        Message message = new Message();
+//        bundle = new Bundle();
+//        bundle.putSerializable("array", (Serializable) array);
+//        message.setData(bundle);
+//        handler.sendMessage(message);
+//    }
 
 }
