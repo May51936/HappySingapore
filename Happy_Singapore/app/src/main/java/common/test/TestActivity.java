@@ -15,6 +15,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
@@ -25,6 +27,11 @@ import java.util.List;
 import Utils.HTTPUtils;
 import Utils.URLUtils;
 import common.network.NewsReq;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import module.activity.BaseActivity;
 import module.data.Picture;
 import module.url.NewsRsp;
@@ -48,9 +55,41 @@ public class TestActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_layout);
-        NewsReq news = new NewsReq(TestActivity.this);
-        news.init();
-        news.sendReq();
+
+        Observable<ResponseBody> observable;
+        Retrofit retrofit = new RetrofitModule().setURL(URLUtils.COVID_19);
+        HTTPUtils httpUtils = retrofit.create(HTTPUtils.class);
+        observable = httpUtils.getCovid();
+        observable.subscribeOn(Schedulers.io())
+                .unsubscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<ResponseBody>() {
+                    @Override
+                    public void onSubscribe(@NotNull Disposable d) {
+                        Log.d(TAG, "Connection Start...");
+                    }
+
+                    @Override
+                    public void onNext(@NotNull ResponseBody responseBody) {
+                        try {
+                            Log.i(TAG, responseBody.string());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Log.e(TAG, "Successful data");
+                    }
+
+                    @Override
+                    public void onError(@NotNull Throwable e) {
+                        Log.d(TAG, "Failed connection:" + e);
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.d(TAG, "Successful connection");
+                    }
+                });
+
 //        try {
 //            news.getOneNews(0).get_pic();
 //            pic.getFromURL(news.getOneNews(0).get_pic());
@@ -60,5 +99,11 @@ public class TestActivity extends BaseActivity {
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
+    }
+
+    public void getNews(){
+        NewsReq news = new NewsReq(TestActivity.this);
+        news.init();
+        news.sendReq();
     }
 }

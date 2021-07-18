@@ -8,6 +8,8 @@ public class URLUtils {
     //新闻API
     public static final String news = "https://newsapi.org/v2/";
     public static final String news_addition = "top-headlines?country=sg&apiKey=";
+    //疫情
+    public static final String COVID_19 = "https://www.gov.sg/features/";
     //data.gov.sg API URL基址
     public static final String API_base = "https://api.data.gov.sg/v1";
 

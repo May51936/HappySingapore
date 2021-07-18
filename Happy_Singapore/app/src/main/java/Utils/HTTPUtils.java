@@ -29,4 +29,10 @@ public interface HTTPUtils {
     @GET
     Observable<ResponseBody> getPic(@Url String url);
 
+    /**
+     * 获取疫情资讯
+     */
+    @GET("covid-19/")
+    Observable<ResponseBody> getCovid();
+
 }
