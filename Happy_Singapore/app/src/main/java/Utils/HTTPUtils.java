@@ -32,7 +32,8 @@ public interface HTTPUtils {
     /**
      * 获取疫情资讯
      */
-    @GET("covid-19/")
-    Observable<ResponseBody> getCovid();
+    @GET
+    Observable<ResponseBody> getCovid(@Url String url);
+
 
 }

@@ -26,6 +26,7 @@ import java.util.List;
 
 import Utils.HTTPUtils;
 import Utils.URLUtils;
+import common.network.CovidReq;
 import common.network.NewsReq;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
@@ -56,39 +57,7 @@ public class TestActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_layout);
 
-        Observable<ResponseBody> observable;
-        Retrofit retrofit = new RetrofitModule().setURL(URLUtils.COVID_19);
-        HTTPUtils httpUtils = retrofit.create(HTTPUtils.class);
-        observable = httpUtils.getCovid();
-        observable.subscribeOn(Schedulers.io())
-                .unsubscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<ResponseBody>() {
-                    @Override
-                    public void onSubscribe(@NotNull Disposable d) {
-                        Log.d(TAG, "Connection Start...");
-                    }
-
-                    @Override
-                    public void onNext(@NotNull ResponseBody responseBody) {
-                        try {
-                            Log.i(TAG, responseBody.string());
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        Log.e(TAG, "Successful data");
-                    }
-
-                    @Override
-                    public void onError(@NotNull Throwable e) {
-                        Log.d(TAG, "Failed connection:" + e);
-                    }
-
-                    @Override
-                    public void onComplete() {
-                        Log.d(TAG, "Successful connection");
-                    }
-                });
+        getCovid();
 
 //        try {
 //            news.getOneNews(0).get_pic();
@@ -105,5 +74,11 @@ public class TestActivity extends BaseActivity {
         NewsReq news = new NewsReq(TestActivity.this);
         news.init();
         news.sendReq();
+    }
+
+    public void getCovid(){
+        CovidReq covid = new CovidReq(TestActivity.this);
+        covid.init("/");
+        covid.sendReq();
     }
 }
