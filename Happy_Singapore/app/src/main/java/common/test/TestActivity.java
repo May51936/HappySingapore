@@ -27,6 +27,7 @@ import java.util.List;
 import Utils.HTTPUtils;
 import Utils.URLUtils;
 import common.network.CovidReq;
+import common.network.LTAReq;
 import common.network.NewsReq;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
@@ -56,8 +57,11 @@ public class TestActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_layout);
-
-        getCovid();
+//        getNews();
+//        getCovid();
+        LTAReq test = new LTAReq(TestActivity.this);
+        test.init();
+        test.sendReq();
 
 //        try {
 //            news.getOneNews(0).get_pic();

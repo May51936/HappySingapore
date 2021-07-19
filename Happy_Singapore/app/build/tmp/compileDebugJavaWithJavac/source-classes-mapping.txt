@@ -1,5 +1,7 @@
 Utils/URLUtils.java
  Utils.URLUtils
+Utils/HTTPUtils.java
+ Utils.HTTPUtils
 Utils/JSONUtil.java
  Utils.JSONUtil
 module/url/NewsRsp.java
@@ -8,7 +10,7 @@ common/network/CovidReq.java
  common.network.CovidReq
  common.network.CovidReq$1
  common.network.CovidReq$2
- common.network.CovidReq$3
+ common.network.CovidReq$2$1
 module/data/Picture.java
  module.data.Picture
  module.data.Picture$1
@@ -31,17 +33,16 @@ module/url/BaseRsp.java
  module.url.BaseRsp
 module/data/FileProcessing.java
  module.data.FileProcessing
-com/WangTianyu/HappySingapore/databinding/TestBinding.java
- com.WangTianyu.HappySingapore.databinding.TestBinding
-common/test/TestActivity.java
- common.test.TestActivity
+module/url/RequestModule.java
+ module.url.RequestModule
 module/url/NewsRspAll.java
  module.url.NewsRspAll
 Utils/APIkeys.java
  Utils.APIkeys
 module/activity/BaseActivity.java
  module.activity.BaseActivity
-Utils/HTTPUtils.java
- Utils.HTTPUtils
-module/url/RequestModule.java
- module.url.RequestModule
+common/network/LTAReq.java
+ common.network.LTAReq
+ common.network.LTAReq$1
+common/test/TestActivity.java
+ common.test.TestActivity

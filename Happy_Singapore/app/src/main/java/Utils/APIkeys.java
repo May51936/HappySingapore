@@ -7,5 +7,5 @@ public class APIkeys {
      */
 
     public static final String news_API_key = "d69b7a41dbcb4ab29c842b66c9a893cc";
-    public static final String transport_API_key = "F1eO4/3GQby/pelqdMU7Cg==";
+    public static final String LTA_API_key = "F1eO4/3GQby/pelqdMU7Cg==";
 }

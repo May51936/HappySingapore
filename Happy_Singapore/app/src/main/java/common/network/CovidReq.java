@@ -1,8 +1,13 @@
 package common.network;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
+import com.WangTianyu.HappySingapore.R;
 import com.bumptech.glide.RequestManager;
 
 
@@ -34,6 +39,7 @@ public class CovidReq extends RequestModule {
     private String newImportCases;
     private String currentCases;
     private String totalCases;
+    String new_info = null;
 
 
     private static final String TAG = CovidReq.class.toString();
@@ -89,7 +95,6 @@ public class CovidReq extends RequestModule {
             Log.e(TAG, "cannot find end");
         String data = returnData.substring(start,end);
         String[] array = data.split("<div data-category=\"Press Releases\">");
-        String new_info = null;
         for (int i = 0; i < array.length; i++)
             if (array[i].indexOf("On Local Covid-19 Situation") != -1) {
                 new_info = array[i].substring(array[i].indexOf("details"), array[i].indexOf("\">"));
@@ -143,6 +148,16 @@ public class CovidReq extends RequestModule {
                     @Override
                     public void onComplete() {
                         Log.d(TAG, "Successful connection");
+                        TextView text = (TextView) mActivity.findViewById(R.id.covid_new_total_update);
+                        text.setText("+" + newTotalCases + " Cases");
+                        text.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                intent.setData(Uri.parse(URLUtils.COVID_19 + new_info));
+                                mActivity.startActivity(intent);
+                            }
+                        });
                     }
                 });
     }

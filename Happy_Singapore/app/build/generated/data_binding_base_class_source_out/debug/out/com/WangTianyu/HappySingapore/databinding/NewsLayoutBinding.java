@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,10 +20,19 @@ public final class NewsLayoutBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final TextView covidNewTotalUpdate;
+
+  @NonNull
+  public final TextView covidTitle;
+
+  @NonNull
   public final RecyclerView newsView;
 
-  private NewsLayoutBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView newsView) {
+  private NewsLayoutBinding(@NonNull LinearLayout rootView, @NonNull TextView covidNewTotalUpdate,
+      @NonNull TextView covidTitle, @NonNull RecyclerView newsView) {
     this.rootView = rootView;
+    this.covidNewTotalUpdate = covidNewTotalUpdate;
+    this.covidTitle = covidTitle;
     this.newsView = newsView;
   }
 
@@ -53,13 +63,26 @@ public final class NewsLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.covid_new_total_update;
+      TextView covidNewTotalUpdate = rootView.findViewById(id);
+      if (covidNewTotalUpdate == null) {
+        break missingId;
+      }
+
+      id = R.id.covid_title;
+      TextView covidTitle = rootView.findViewById(id);
+      if (covidTitle == null) {
+        break missingId;
+      }
+
       id = R.id.news_view;
       RecyclerView newsView = rootView.findViewById(id);
       if (newsView == null) {
         break missingId;
       }
 
-      return new NewsLayoutBinding((LinearLayout) rootView, newsView);
+      return new NewsLayoutBinding((LinearLayout) rootView, covidNewTotalUpdate, covidTitle,
+          newsView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

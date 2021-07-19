@@ -56,6 +56,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //点击跳转到新闻网页
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

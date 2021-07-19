@@ -101,7 +101,7 @@ public class NewsReq extends RequestModule{
 
                     @Override
                     public void onError(Throwable e) {
-                        Log.d(TAG, "Failed connection");
+                        Log.d(TAG, "Failed connection: " + e);
                     }
 
                     @Override

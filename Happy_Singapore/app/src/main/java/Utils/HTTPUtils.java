@@ -7,6 +7,8 @@ import module.url.NewsRspAll;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Header;
+import retrofit2.http.Headers;
 import retrofit2.http.PATCH;
 import retrofit2.http.Path;
 import retrofit2.http.Url;
@@ -34,6 +36,13 @@ public interface HTTPUtils {
      */
     @GET
     Observable<ResponseBody> getCovid(@Url String url);
+
+    /**
+     * 获取公交信息
+     */
+    @Headers("AccountKey:"+ APIkeys.LTA_API_key)
+    @GET("ltaodataservice/BusArrivalv2")
+    Observable<ResponseBody> getBusArrivals();
 
 
 }

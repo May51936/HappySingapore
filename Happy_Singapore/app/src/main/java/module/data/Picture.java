@@ -54,9 +54,10 @@ public class Picture {
     public void getFromURL(String path) throws IOException {
         //分割URL以便满足retrofit要求
         Log.i(TAG, path);
-        int split = path.lastIndexOf("/");
+        int split = path.indexOf("/", 8);
         String base_url = path.substring(0,split+1);
         String addi_url = path.substring(split+1);
+        Log.i(TAG, base_url);
         Retrofit retrofit = new RetrofitModule().setURL(base_url);
         HTTPUtils service = retrofit.create(HTTPUtils.class);
         observable = service.getPic(addi_url);
