@@ -1,0 +1,7 @@
+2021.7.16:
+  Roughly complete news request module. Left some question: 1. UI is not good. 2. Pictures will change while scroll.
+    2021.7.19:
+      The reason may be that setting picture is another thread, so the cache function of recyclerView does not work (guess).
+      
+2021.7.19:
+  Add Covid-19 news getting module (no UI).
