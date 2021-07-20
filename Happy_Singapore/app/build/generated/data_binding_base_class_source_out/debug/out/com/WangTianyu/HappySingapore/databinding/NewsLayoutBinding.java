@@ -4,6 +4,7 @@ package com.WangTianyu.HappySingapore.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -20,20 +21,65 @@ public final class NewsLayoutBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final TextView covidNewTotalUpdate;
+  public final LinearLayout CovidNews;
+
+  @NonNull
+  public final Button changeLanguage;
 
   @NonNull
   public final TextView covidTitle;
 
   @NonNull
+  public final TextView deadCases;
+
+  @NonNull
+  public final TextView deadCasesTitle;
+
+  @NonNull
+  public final TextView newDeadCases;
+
+  @NonNull
+  public final TextView newRecoveredCases;
+
+  @NonNull
+  public final TextView newTotalCases;
+
+  @NonNull
   public final RecyclerView newsView;
 
-  private NewsLayoutBinding(@NonNull LinearLayout rootView, @NonNull TextView covidNewTotalUpdate,
-      @NonNull TextView covidTitle, @NonNull RecyclerView newsView) {
+  @NonNull
+  public final TextView recoveredCases;
+
+  @NonNull
+  public final TextView recoveredCasesTitle;
+
+  @NonNull
+  public final TextView totalCases;
+
+  @NonNull
+  public final TextView totalCasesTitle;
+
+  private NewsLayoutBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout CovidNews,
+      @NonNull Button changeLanguage, @NonNull TextView covidTitle, @NonNull TextView deadCases,
+      @NonNull TextView deadCasesTitle, @NonNull TextView newDeadCases,
+      @NonNull TextView newRecoveredCases, @NonNull TextView newTotalCases,
+      @NonNull RecyclerView newsView, @NonNull TextView recoveredCases,
+      @NonNull TextView recoveredCasesTitle, @NonNull TextView totalCases,
+      @NonNull TextView totalCasesTitle) {
     this.rootView = rootView;
-    this.covidNewTotalUpdate = covidNewTotalUpdate;
+    this.CovidNews = CovidNews;
+    this.changeLanguage = changeLanguage;
     this.covidTitle = covidTitle;
+    this.deadCases = deadCases;
+    this.deadCasesTitle = deadCasesTitle;
+    this.newDeadCases = newDeadCases;
+    this.newRecoveredCases = newRecoveredCases;
+    this.newTotalCases = newTotalCases;
     this.newsView = newsView;
+    this.recoveredCases = recoveredCases;
+    this.recoveredCasesTitle = recoveredCasesTitle;
+    this.totalCases = totalCases;
+    this.totalCasesTitle = totalCasesTitle;
   }
 
   @Override
@@ -63,9 +109,15 @@ public final class NewsLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.covid_new_total_update;
-      TextView covidNewTotalUpdate = rootView.findViewById(id);
-      if (covidNewTotalUpdate == null) {
+      id = R.id.Covid_news;
+      LinearLayout CovidNews = rootView.findViewById(id);
+      if (CovidNews == null) {
+        break missingId;
+      }
+
+      id = R.id.changeLanguage;
+      Button changeLanguage = rootView.findViewById(id);
+      if (changeLanguage == null) {
         break missingId;
       }
 
@@ -75,14 +127,69 @@ public final class NewsLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.deadCases;
+      TextView deadCases = rootView.findViewById(id);
+      if (deadCases == null) {
+        break missingId;
+      }
+
+      id = R.id.deadCases_title;
+      TextView deadCasesTitle = rootView.findViewById(id);
+      if (deadCasesTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.new_deadCases;
+      TextView newDeadCases = rootView.findViewById(id);
+      if (newDeadCases == null) {
+        break missingId;
+      }
+
+      id = R.id.new_recoveredCases;
+      TextView newRecoveredCases = rootView.findViewById(id);
+      if (newRecoveredCases == null) {
+        break missingId;
+      }
+
+      id = R.id.new_totalCases;
+      TextView newTotalCases = rootView.findViewById(id);
+      if (newTotalCases == null) {
+        break missingId;
+      }
+
       id = R.id.news_view;
       RecyclerView newsView = rootView.findViewById(id);
       if (newsView == null) {
         break missingId;
       }
 
-      return new NewsLayoutBinding((LinearLayout) rootView, covidNewTotalUpdate, covidTitle,
-          newsView);
+      id = R.id.recoveredCases;
+      TextView recoveredCases = rootView.findViewById(id);
+      if (recoveredCases == null) {
+        break missingId;
+      }
+
+      id = R.id.recoveredCases_title;
+      TextView recoveredCasesTitle = rootView.findViewById(id);
+      if (recoveredCasesTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.totalCases;
+      TextView totalCases = rootView.findViewById(id);
+      if (totalCases == null) {
+        break missingId;
+      }
+
+      id = R.id.totalCases_title;
+      TextView totalCasesTitle = rootView.findViewById(id);
+      if (totalCasesTitle == null) {
+        break missingId;
+      }
+
+      return new NewsLayoutBinding((LinearLayout) rootView, CovidNews, changeLanguage, covidTitle,
+          deadCases, deadCasesTitle, newDeadCases, newRecoveredCases, newTotalCases, newsView,
+          recoveredCases, recoveredCasesTitle, totalCases, totalCasesTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

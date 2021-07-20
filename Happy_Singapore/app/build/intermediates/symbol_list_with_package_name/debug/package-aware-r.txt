@@ -1014,8 +1014,10 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color gray
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_red
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1619,6 +1621,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Covid_news
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1709,6 +1712,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id changeLanguage
 id checkbox
 id checked
 id chip
@@ -1727,12 +1731,13 @@ id content
 id contentPanel
 id coordinator
 id cos
-id covid_new_total_update
 id covid_title
 id custom
 id customPanel
 id cut
 id date_picker_actions
+id deadCases
+id deadCases_title
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -1847,6 +1852,9 @@ id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_header_container
 id never
+id new_deadCases
+id new_recoveredCases
+id new_totalCases
 id news_item_date
 id news_item_img
 id news_item_name
@@ -1879,6 +1887,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recoveredCases
+id recoveredCases_title
 id rectangles
 id reverseSawtooth
 id right
@@ -1973,6 +1983,8 @@ id title_template
 id toggle
 id top
 id topPanel
+id totalCases
+id totalCases_title
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -2161,11 +2173,15 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string changeLanguage
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string covid_news_title
+string deadCases
+string dischargedCases
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2219,6 +2235,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string totalCases
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

@@ -1013,8 +1013,10 @@ int color error_color_material_light 0x7f05005a
 int color foreground_material_dark 0x7f05005b
 int color foreground_material_light 0x7f05005c
 int color gray 0x7f05005d
+int color green 0x7f0500d1
 int color highlighted_text_material_dark 0x7f05005e
 int color highlighted_text_material_light 0x7f05005f
+int color light_red 0x7f0500d2
 int color material_blue_grey_800 0x7f050060
 int color material_blue_grey_900 0x7f050061
 int color material_blue_grey_950 0x7f050062
@@ -1618,6 +1620,7 @@ int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
+int id Covid_news 0x7f08017d
 int id FUNCTION 0x7f080004
 int id META 0x7f080005
 int id NO_DEBUG 0x7f080006
@@ -1708,6 +1711,7 @@ int id center_horizontal 0x7f08005a
 int id center_vertical 0x7f08005b
 int id chain 0x7f08005c
 int id chains 0x7f08005d
+int id changeLanguage 0x7f080187
 int id checkbox 0x7f08005e
 int id checked 0x7f08005f
 int id chip 0x7f080060
@@ -1726,12 +1730,13 @@ int id content 0x7f08006c
 int id contentPanel 0x7f08006d
 int id coordinator 0x7f08006e
 int id cos 0x7f08006f
-int id covid_new_total_update 0x7f08017c
 int id covid_title 0x7f08017b
 int id custom 0x7f080070
 int id customPanel 0x7f080071
 int id cut 0x7f080072
 int id date_picker_actions 0x7f080073
+int id deadCases 0x7f08017e
+int id deadCases_title 0x7f08017f
 int id decelerate 0x7f080074
 int id decelerateAndComplete 0x7f080075
 int id decor_content_parent 0x7f080076
@@ -1846,6 +1851,9 @@ int id nav_controller_view_tag 0x7f0800e2
 int id nav_host_fragment_container 0x7f0800e3
 int id navigation_header_container 0x7f0800e4
 int id never 0x7f0800e5
+int id new_deadCases 0x7f080180
+int id new_recoveredCases 0x7f080181
+int id new_totalCases 0x7f080182
 int id news_item_date 0x7f0800e6
 int id news_item_img 0x7f0800e7
 int id news_item_name 0x7f0800e8
@@ -1878,6 +1886,8 @@ int id progress_circular 0x7f080102
 int id progress_horizontal 0x7f080103
 int id radio 0x7f080104
 int id ratio 0x7f080105
+int id recoveredCases 0x7f080183
+int id recoveredCases_title 0x7f080184
 int id rectangles 0x7f080106
 int id reverseSawtooth 0x7f080107
 int id right 0x7f080108
@@ -1972,6 +1982,8 @@ int id title_template 0x7f080161
 int id toggle 0x7f080162
 int id top 0x7f080163
 int id topPanel 0x7f080164
+int id totalCases 0x7f080185
+int id totalCases_title 0x7f080186
 int id touch_outside 0x7f080165
 int id transitionToEnd 0x7f080166
 int id transitionToStart 0x7f080167
@@ -2160,11 +2172,15 @@ int string abc_toolbar_collapse_description 0x7f0e001a
 int string app_name 0x7f0e001b
 int string appbar_scrolling_view_behavior 0x7f0e001c
 int string bottom_sheet_behavior 0x7f0e001d
+int string changeLanguage 0x7f0e005c
 int string character_counter_content_description 0x7f0e001e
 int string character_counter_overflowed_content_description 0x7f0e001f
 int string character_counter_pattern 0x7f0e0020
 int string chip_text 0x7f0e0021
 int string clear_text_end_icon_content_description 0x7f0e0022
+int string covid_news_title 0x7f0e0058
+int string deadCases 0x7f0e0059
+int string dischargedCases 0x7f0e005a
 int string error_icon_content_description 0x7f0e0023
 int string exposed_dropdown_menu_content_description 0x7f0e0024
 int string fab_transformation_scrim_behavior 0x7f0e0025
@@ -2218,6 +2234,7 @@ int string path_password_eye_mask_visible 0x7f0e0054
 int string path_password_strike_through 0x7f0e0055
 int string search_menu_title 0x7f0e0056
 int string status_bar_notification_info_overflow 0x7f0e0057
+int string totalCases 0x7f0e005b
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
 int style AndroidThemeColorAccentYellow 0x7f0f0002

@@ -1,10 +1,15 @@
 package common.test;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,9 +28,11 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 import Utils.HTTPUtils;
 import Utils.URLUtils;
+import common.nav.changeLanguage;
 import common.network.CovidReq;
 import common.network.LTAReq;
 import common.network.NewsReq;
@@ -51,17 +58,21 @@ public class TestActivity extends BaseActivity {
     private static final String TAG = TestActivity.class.toString();
     private Handler handler;
     private Bundle bundle = new Bundle();
+    private Observable<ResponseBody> observable;
+    private String language;
 //    private ArrayList<NewsRsp> array;
 
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+//        setLanguage();
         setContentView(R.layout.news_layout);
-//        getNews();
-//        getCovid();
-        LTAReq test = new LTAReq(TestActivity.this);
-        test.init();
-        test.sendReq();
+        getNews();
+        getCovid();
+
+//        LTAReq test = new LTAReq(TestActivity.this);
+//        test.init();
+//        test.sendReq();
 
 //        try {
 //            news.getOneNews(0).get_pic();
@@ -75,14 +86,74 @@ public class TestActivity extends BaseActivity {
     }
 
     public void getNews(){
+        //新闻接口
         NewsReq news = new NewsReq(TestActivity.this);
         news.init();
         news.sendReq();
     }
 
     public void getCovid(){
+        //疫情接口
         CovidReq covid = new CovidReq(TestActivity.this);
         covid.init("/");
         covid.sendReq();
+    }
+
+    public void reqTest(String url){
+        //测试URL用接口
+        Retrofit retrofit = new RetrofitModule().setURL(url);
+        HTTPUtils service = retrofit.create(HTTPUtils.class);
+        observable = service.test("");
+        observable.subscribeOn(Schedulers.io())
+                .unsubscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<ResponseBody>() {
+                    @Override
+                    public void onSubscribe(@NotNull Disposable d) {
+                        Log.d(TAG, "Connection Start...");
+                    }
+
+                    @Override
+                    public void onNext(@NotNull ResponseBody responseBody) {
+                        try {
+                            //回调处理数据
+                            Log.i(TAG, responseBody.string());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Log.e(TAG, "Successful data");
+                    }
+
+                    @Override
+                    public void onError(@NotNull Throwable e) {
+                        Log.d(TAG, "Failed connection");
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.d(TAG, "Successful connection");
+                    }
+                });
+    }
+
+    public void setLanguage(){
+        SharedPreferences sp = getSharedPreferences("SP_data", MODE_PRIVATE);
+        language = sp.getString("language", null);
+        if (language.equals(Locale.SIMPLIFIED_CHINESE)){
+            DisplayMetrics metrics = getResources().getDisplayMetrics();
+            Locale locale = Locale.SIMPLIFIED_CHINESE;
+            Configuration configuration = getResources().getConfiguration();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                configuration.setLocale(locale);
+            } else {
+                configuration.locale = locale;
+            }
+            getResources().updateConfiguration(configuration, metrics);
+            //重新启动Activity
+            Intent intent = new Intent(this, TestActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }
+
     }
 }

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">幸福狮城</string>
+    <string name="covid_news_title">疫情资讯:</string>
+    <string name="dischargedCases">治愈</string>
+    <string name="totalCases">总数</string>
+    <string name="deadCases">死亡</string>
+    <string name="changeLanguage">切换英文</string>
+</resources>

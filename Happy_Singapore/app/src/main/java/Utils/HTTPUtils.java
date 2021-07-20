@@ -38,6 +38,18 @@ public interface HTTPUtils {
     Observable<ResponseBody> getCovid(@Url String url);
 
     /**
+     * 获取疫情总结
+     */
+    @GET
+    Observable<ResponseBody> getCovidSummary(@Url String url);
+
+    /**
+     * 测试用GET接口
+     */
+    @GET
+    Observable<ResponseBody> test(@Url String url);
+
+    /**
      * 获取公交信息
      */
     @Headers("AccountKey:"+ APIkeys.LTA_API_key)
