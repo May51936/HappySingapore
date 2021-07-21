@@ -1,6 +1,7 @@
 package common.test;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -65,10 +66,10 @@ public class TestActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-//        setLanguage();
+        setLanguage();
         setContentView(R.layout.news_layout);
-        getNews();
         getCovid();
+        getNews();
 
 //        LTAReq test = new LTAReq(TestActivity.this);
 //        test.init();
@@ -137,12 +138,15 @@ public class TestActivity extends BaseActivity {
     }
 
     public void setLanguage(){
-        SharedPreferences sp = getSharedPreferences("SP_data", MODE_PRIVATE);
-        language = sp.getString("language", null);
-        if (language.equals(Locale.SIMPLIFIED_CHINESE)){
-            DisplayMetrics metrics = getResources().getDisplayMetrics();
-            Locale locale = Locale.SIMPLIFIED_CHINESE;
-            Configuration configuration = getResources().getConfiguration();
+        DisplayMetrics metrics = getResources().getDisplayMetrics();
+        Locale locale = null;
+        Configuration configuration = getResources().getConfiguration();
+        SharedPreferences sp = getSharedPreferences("SP_data", Context.MODE_PRIVATE);
+        String language = sp.getString("language", null);
+        Log.i(TAG, language);
+        Log.i(TAG, configuration.locale.toLanguageTag());
+        if (!language.equals("Chinese") && configuration.locale.toLanguageTag().equals("zh-CN")){
+            locale = Locale.ENGLISH;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
                 configuration.setLocale(locale);
             } else {
@@ -154,6 +158,6 @@ public class TestActivity extends BaseActivity {
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
-
     }
+
 }

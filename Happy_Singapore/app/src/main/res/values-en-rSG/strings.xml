@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Happy Singapore</string>
-    <string name="covid_news_title">Covid_19 updates:</string>
-    <string name="dischargedCases">Discharged</string>
-    <string name="totalCases">Total</string>
-    <string name="deadCases">Dead</string>
-    <string name="changeLanguage">Change to Chinese</string>
-</resources>
