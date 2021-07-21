@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [androidx.databinding:viewbinding:4.2.2] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\e100e1d87f3eab663026c1e722d50103\viewbinding-4.2.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\f5c7c68913d5271e996963f863ab2fe2\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\e822c6e541770b57899944d7b2242c98\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -16,6 +16,9 @@ MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0] C:\Users\Wang T
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\5511f57e160c7e247f5d805a7544c561\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\dc3efdeb21bfe033ce749010f42b490d\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\369e585a71243a75d46b83812b1f44ac\rxandroid-2.1.1\AndroidManifest.xml:15:1-20:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:17:1-56:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\233f29e05d3f62c91d94717ecf57158d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b913b577636afb646741ffd904028e15\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\022e86935ec8da08f293a834c7a9a4dc\appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\204d56b624e751e7990ccfa8a11e8889\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -26,13 +29,18 @@ MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\Wang Tianyu\.gradle\cach
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\dd2927f5c8f4efef87e2029689348720\drawerlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\f318378b0e42eef86fb724b98ce46366\transition-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b9a8ccdf08677e6ebe8a29448e9bae04\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\7430e01f2c6ea8ff3578619715c15e18\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\338167d8bee44ca72c2d4fff9adc0c6c\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a0155774c5e9b8e146aab9c810686a6b\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\29381e4b3a15d9e6ef9bbdf26871c88b\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\1e3214591e5f847e6b5b2333c34f548f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\818f45328ee8f5b99bad88c27c6cc009\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\6996f596c778b3aed39bb9cecbf69969\navigation-runtime-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\bda27261a6bbc5e10728551c109a2777\activity-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3071ce80fdcfa18abcc0ff9d690b7155\navigation-common-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\1e1f894f3187e0e4737e7e00626d423c\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a4aa212df090916fdc5167a61460eb35\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d7ef7342eb80ff707691a83b9012e6a9\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.3.2] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d2fab01d17c089ea45014664a05aa8a0\core-1.3.2\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\c7739dfe0a1efd64a0dd260a875d3ca5\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\30e9f1d09e79c3adebc6c3a4eab13e4e\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
@@ -43,23 +51,26 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Wang Tianyu\.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\e3a7d3b723deff8b2b903c0665652c62\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\64b70a68e7f77255649dcf7bb7164809\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\69846ae0a25a5c26a4168a449d371740\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\815bb9272ee789daabc21bc15b42e2c3\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b93e2b8a7319b8231fdc1936a598b860\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\f8503f66578d12caa389b09e1e5eca48\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\8b1826e082b884f9fc593d27a9580a45\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:4:5-44
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:2:11-69
@@ -75,20 +86,30 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
 		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:8:22-77
-uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:10:5-11:47
-	tools:ignore
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:11:9-44
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:10:5-64
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:22:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:22:5-65
 	android:name
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:10:22-81
-uses-permission#android.permission.WRITE_MEDIA_STORAGE
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:10:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:11:5-69
+	android:name
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:11:22-66
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
 ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:12:5-13:47
 	tools:ignore
 		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:13:9-44
 	android:name
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:12:22-75
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:12:22-81
+uses-permission#android.permission.WRITE_MEDIA_STORAGE
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:14:5-15:47
+	tools:ignore
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:14:22-75
 application
-ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:15:5-32:19
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:17:5-33:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\e822c6e541770b57899944d7b2242c98\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\e822c6e541770b57899944d7b2242c98\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\1d7e9fd91787b67e581a3c9368312805\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -97,6 +118,8 @@ MERGED from [org.litepal.guolindev:core:3.2.3] C:\Users\Wang Tianyu\.gradle\cach
 MERGED from [org.litepal.guolindev:core:3.2.3] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b2fd500c04eeb8c0538a0fb3171323dd\core-3.2.3\AndroidManifest.xml:11:5-12:19
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\ab378bf830c7048bc4dd1737c270aeb5\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\ab378bf830c7048bc4dd1737c270aeb5\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:46:5-54:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:46:5-54:19
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a0155774c5e9b8e146aab9c810686a6b\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a0155774c5e9b8e146aab9c810686a6b\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.3.2] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d2fab01d17c089ea45014664a05aa8a0\core-1.3.2\AndroidManifest.xml:24:5-89
@@ -106,33 +129,31 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wa
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d2fab01d17c089ea45014664a05aa8a0\core-1.3.2\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:20:9-40
 	android:roundIcon
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:19:9-59
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:21:9-59
 	android:icon
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:17:9-46
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:19:9-46
 	android:allowBackup
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:18:9-35
 	android:usesCleartextTraffic
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:21:9-44
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:23:9-44
 activity#common.test.TestActivity
-ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:23:9-31:20
-	android:label
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:25:13-36
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:25:9-32:20
 	android:name
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:24:13-52
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:26:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml:30:27-74
 uses-sdk
 INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
@@ -161,6 +182,12 @@ MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Wang Tianyu\.gra
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\dc3efdeb21bfe033ce749010f42b490d\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\369e585a71243a75d46b83812b1f44ac\rxandroid-2.1.1\AndroidManifest.xml:18:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\369e585a71243a75d46b83812b1f44ac\rxandroid-2.1.1\AndroidManifest.xml:18:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\233f29e05d3f62c91d94717ecf57158d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\233f29e05d3f62c91d94717ecf57158d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b913b577636afb646741ffd904028e15\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b913b577636afb646741ffd904028e15\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\022e86935ec8da08f293a834c7a9a4dc\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -181,12 +208,16 @@ MERGED from [androidx.transition:transition:1.3.0] C:\Users\Wang Tianyu\.gradle\
 MERGED from [androidx.transition:transition:1.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\f318378b0e42eef86fb724b98ce46366\transition-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b9a8ccdf08677e6ebe8a29448e9bae04\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b9a8ccdf08677e6ebe8a29448e9bae04\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\7430e01f2c6ea8ff3578619715c15e18\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\7430e01f2c6ea8ff3578619715c15e18\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\338167d8bee44ca72c2d4fff9adc0c6c\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\338167d8bee44ca72c2d4fff9adc0c6c\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a0155774c5e9b8e146aab9c810686a6b\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a0155774c5e9b8e146aab9c810686a6b\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\29381e4b3a15d9e6ef9bbdf26871c88b\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\29381e4b3a15d9e6ef9bbdf26871c88b\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\1e3214591e5f847e6b5b2333c34f548f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\1e3214591e5f847e6b5b2333c34f548f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\818f45328ee8f5b99bad88c27c6cc009\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\818f45328ee8f5b99bad88c27c6cc009\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\6996f596c778b3aed39bb9cecbf69969\navigation-runtime-2.3.0\AndroidManifest.xml:20:5-22:41
@@ -195,6 +226,12 @@ MERGED from [androidx.activity:activity:1.1.0] C:\Users\Wang Tianyu\.gradle\cach
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\bda27261a6bbc5e10728551c109a2777\activity-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3071ce80fdcfa18abcc0ff9d690b7155\navigation-common-2.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3071ce80fdcfa18abcc0ff9d690b7155\navigation-common-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\1e1f894f3187e0e4737e7e00626d423c\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\1e1f894f3187e0e4737e7e00626d423c\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a4aa212df090916fdc5167a61460eb35\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\a4aa212df090916fdc5167a61460eb35\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d7ef7342eb80ff707691a83b9012e6a9\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d7ef7342eb80ff707691a83b9012e6a9\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.3.2] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d2fab01d17c089ea45014664a05aa8a0\core-1.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.2] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\d2fab01d17c089ea45014664a05aa8a0\core-1.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\c7739dfe0a1efd64a0dd260a875d3ca5\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -215,6 +252,12 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Wang Tia
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\64b70a68e7f77255649dcf7bb7164809\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\69846ae0a25a5c26a4168a449d371740\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\69846ae0a25a5c26a4168a449d371740\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\815bb9272ee789daabc21bc15b42e2c3\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\815bb9272ee789daabc21bc15b42e2c3\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b93e2b8a7319b8231fdc1936a598b860\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\b93e2b8a7319b8231fdc1936a598b860\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\f8503f66578d12caa389b09e1e5eca48\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\f8503f66578d12caa389b09e1e5eca48\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\8b1826e082b884f9fc593d27a9580a45\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\8b1826e082b884f9fc593d27a9580a45\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
@@ -227,3 +270,53 @@ INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Ha
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Wang Tianyu\Desktop\Programming\Android\HappySingapore\Happy_Singapore\app\src\main\AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:26:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:29:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:35:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:34:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:36:5-38:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:38:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:37:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:39:5-41:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:40:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:42:5-44:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:43:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:47:9-53:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:50:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:49:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:51:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:53:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:52:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\Wang Tianyu\.gradle\caches\transforms-2\files-2.1\3d30d33d71ae869dd5d350ba69f304d5\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:48:13-74

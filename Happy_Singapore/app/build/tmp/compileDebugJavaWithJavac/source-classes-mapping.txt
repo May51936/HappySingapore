@@ -7,40 +7,6 @@ Utils/JSONUtil.java
  Utils.JSONUtil
 module/url/NewsRsp.java
  module.url.NewsRsp
-module/url/RequestModule.java
- module.url.RequestModule
-module/data/Picture.java
- module.data.Picture
- module.data.Picture$1
-Utils/APIkeys.java
- Utils.APIkeys
-module/url/NewsRspAll.java
- module.url.NewsRspAll
-Utils/HTTPUtils.java
- Utils.HTTPUtils
-module/url/RetrofitModule.java
- module.url.RetrofitModule
-com/WangTianyu/HappySingapore/BuildConfig.java
- com.WangTianyu.HappySingapore.BuildConfig
-module/activity/BaseActivity.java
- module.activity.BaseActivity
-module/url/BaseRsp.java
- module.url.BaseRsp
-module/data/FileProcessing.java
- module.data.FileProcessing
-com/WangTianyu/HappySingapore/databinding/NewsLayoutBinding.java
- com.WangTianyu.HappySingapore.databinding.NewsLayoutBinding
-com/WangTianyu/HappySingapore/databinding/NewsItemBinding.java
- com.WangTianyu.HappySingapore.databinding.NewsItemBinding
-common/network/NewsReq.java
- common.network.NewsReq
- common.network.NewsReq$1
-module/adapter/RecyclerAdapter.java
- module.adapter.RecyclerAdapter
- module.adapter.RecyclerAdapter$1
- module.adapter.RecyclerAdapter$MyViewHolder
-common/nav/changeLanguage.java
- common.nav.changeLanguage
 common/network/CovidReq.java
  common.network.CovidReq
  common.network.CovidReq$1
@@ -48,6 +14,40 @@ common/network/CovidReq.java
  common.network.CovidReq$2$1
  common.network.CovidReq$3
  common.network.CovidReq$4
+module/data/Picture.java
+ module.data.Picture
+ module.data.Picture$1
+module/adapter/RecyclerAdapter.java
+ module.adapter.RecyclerAdapter
+ module.adapter.RecyclerAdapter$1
+ module.adapter.RecyclerAdapter$MyViewHolder
+common/nav/changeLanguage.java
+ common.nav.changeLanguage
+common/network/NewsReq.java
+ common.network.NewsReq
+ common.network.NewsReq$1
+com/WangTianyu/HappySingapore/databinding/NewsItemBinding.java
+ com.WangTianyu.HappySingapore.databinding.NewsItemBinding
+module/url/RetrofitModule.java
+ module.url.RetrofitModule
+com/WangTianyu/HappySingapore/BuildConfig.java
+ com.WangTianyu.HappySingapore.BuildConfig
+com/WangTianyu/HappySingapore/databinding/NewsLayoutBinding.java
+ com.WangTianyu.HappySingapore.databinding.NewsLayoutBinding
+module/url/BaseRsp.java
+ module.url.BaseRsp
+module/data/FileProcessing.java
+ module.data.FileProcessing
 common/test/TestActivity.java
  common.test.TestActivity
  common.test.TestActivity$1
+module/url/NewsRspAll.java
+ module.url.NewsRspAll
+Utils/APIkeys.java
+ Utils.APIkeys
+module/activity/BaseActivity.java
+ module.activity.BaseActivity
+Utils/HTTPUtils.java
+ Utils.HTTPUtils
+module/url/RequestModule.java
+ module.url.RequestModule

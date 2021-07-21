@@ -16,6 +16,7 @@ import com.bumptech.glide.RequestManager;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -218,6 +219,10 @@ public class CovidReq extends RequestModule {
             public void onComplete() {
                 Log.d(TAG, "Successful connection");
                 initUI();
+                //同步调用
+                NewsReq news = new NewsReq(mActivity);
+                news.init();
+                news.sendReq();
             }
         });
     }
@@ -300,7 +305,7 @@ public class CovidReq extends RequestModule {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(URLUtils.moh));
+                intent.setData(Uri.parse(URLUtils.COVID_19 + new_info));
                 mActivity.startActivity(intent);
             }
         });

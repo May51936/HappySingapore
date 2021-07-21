@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\Wang Tianyu\\Desktop\\Programming\\Android\\HappySingapore\\Happy_Singapore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-el\\values-el.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Wang Tianyu\\.gradle\\caches\\transforms-2\\files-2.1\\3d30d33d71ae869dd5d350ba69f304d5\\jetified-zxing-android-embedded-3.6.0\\res\\values-el\\values-el.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,311",
+                        "endColumns": "58,46,149,114",
+                        "endOffsets": "109,156,306,421"
+                    },
+                    "to": {
+                        "startLines": "33,34,35,36",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "3312,3371,3418,3568",
+                        "endColumns": "58,46,149,114",
+                        "endOffsets": "3366,3413,3563,3678"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Wang Tianyu\\.gradle\\caches\\transforms-2\\files-2.1\\f5c7c68913d5271e996963f863ab2fe2\\navigation-ui-2.3.0\\res\\values-el\\values-el.xml",
                     "from": {
                         "startLines": "2,3",

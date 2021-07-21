@@ -69,7 +69,7 @@ public class TestActivity extends BaseActivity {
         setLanguage();
         setContentView(R.layout.news_layout);
         getCovid();
-        getNews();
+//        getNews();
 
 //        LTAReq test = new LTAReq(TestActivity.this);
 //        test.init();
