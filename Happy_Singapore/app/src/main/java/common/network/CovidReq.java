@@ -255,14 +255,6 @@ public class CovidReq extends RequestModule {
     public void storeData(){
         SharedPreferences sp = mActivity.getSharedPreferences("SP_data", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
-//        初始化
-//        editor.putString("recoveredCases", String.valueOf(Integer.parseInt(recoverdCases)-6));
-//        editor.putString("deadCases", deadCases);
-//        editor.putString("totalCases", totalCases);
-//        editor.putString("date", "18 Jul 2021");
-//        editor.putString("newRecover", "0");
-//        editor.putString("newDead", "0");
-//        editor.apply();
         String ori_recovered = sp.getString("recoveredCases", "-1");
         String ori_dead = sp.getString("deadCases", "-1");
         if (!date.equals(sp.getString("date", "0"))){
