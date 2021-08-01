@@ -61,6 +61,7 @@ public class TestActivity extends BaseActivity {
     private Bundle bundle = new Bundle();
     private Observable<ResponseBody> observable;
     private String language;
+    private ;
 //    private ArrayList<NewsRsp> array;
 
     @Override
